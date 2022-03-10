@@ -70,11 +70,11 @@ function App() {
             element={
               <Home
                 data={data}
+                key={data.id}
                 setData={setData}
                 simpsonsData={simpsonsData}
                 setSimpsonsData={setSimpsonsData}
                 removeItem={removeItem}
-
               />
             }
           />
@@ -87,11 +87,10 @@ function App() {
                 form={form}
                 setForm={setForm}
                 saveItem={saveItem}
-
               />
             }
           />
-         <Route path="/Detail/:id" element={<Detail />}/>
+          <Route path="/Detail/:id" element={<Detail />} />
         </Routes>
       </main>
     </div>
